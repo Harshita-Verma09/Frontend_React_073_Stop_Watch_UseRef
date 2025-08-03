@@ -1,0 +1,57 @@
+/* WatchStop.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.watch-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background-color: #28a745; /* Start - Green */
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: #dc3545; /* Stop - Red */
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: #ffc107; /* Reset - Yellow */
+  color: black;
+}
